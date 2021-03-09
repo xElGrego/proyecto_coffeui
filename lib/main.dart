@@ -4,24 +4,24 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:proyecto_coffeui/app/constants/constants.dart';
 
-import 'app/pages/home_page.dart';
+import 'app/pages/lading_page.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
+
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    //ScreenUtilInit: Widget que ayuda a configurar el tamaño y fuente de la pantalla.
+    //ScreenUtilInit: Widget que ayuda a configurar el 
+    //tamaño y fuente de la pantalla.
     return ScreenUtilInit(
       designSize: Size(375, 812),
       builder: () => GetMaterialApp(
         defaultTransition: Transition.cupertino,
-        home: HomePage(),
+        home: LadingPage(),
         debugShowCheckedModeBanner: false,
-        title: 'Grego Coffe- Ui',
+        title: 'Grego Coffe - UI',
         theme: ThemeData(
           scaffoldBackgroundColor: kFadedScaffoldColor,
           textTheme: GoogleFonts.poppinsTextTheme(),
